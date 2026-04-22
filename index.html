@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taskly — Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">📋</div>
+      <h1>Taskly</h1>
+      <p>Stay organized, stay productive</p>
+    </header>
+
+    <!-- Input area -->
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Add a new task…" />
+      <button id="addBtn" aria-label="Add task">+</button>
+    </div>
+
+    <!-- Task counter -->
+    <div class="counter" id="counter"></div>
+
+    <!-- Task list -->
+    <ul class="task-list" id="taskList"></ul>
+
+    <!-- Empty state -->
+    <div class="empty" id="emptyState">
+      <div class="empty-icon">📋</div>
+      <p>No tasks yet. Add one above!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
